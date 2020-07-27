@@ -1,0 +1,10 @@
+cmake_minimum_required (VERSION 2.8)
+set(CMAKE_VERBOSE_MAKEFILE ON)
+set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
+PROJECT (osdev)
+
+include_directories(src/include)
+ADD_SUBDIRECTORY(src/kernel)
+ADD_SUBDIRECTORY(src/libk)
+#ADD_SUBDIRECTORY(src/bootloader)
+#ADD_SUBDIRECTORY(src/init)
